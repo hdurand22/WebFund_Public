@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    font-family: 'Courier';
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+span {
+    color: aqua;
+    font-family: 'Courier';
+    text-align: left;  
+}
+
+h2 {
+    background-color: rebeccapurple;
+    color: white;
+    font-family: 'Courier';
+    font-weight: lighter;
+    margin: 10px;
+    padding: 5px;
+    font-style: italic;
+    text-align: center;
+}
+
+h3 {
+    background-color: lightskyblue;
+    color: black;
+    font-family: 'Courier';
+    font-weight: lighter;
+    margin: 10px;
+    padding: 5px;
+    text-align: right;
+    text-decoration: underline;
+}
