@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    Font-Family: 'Merriweather', Serif;
+    /* outline: 1px solid red; */
+}
+
+.card {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 65%, rgba(23,162,184,1) 65%);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 600px;
+    padding: 10px;
+    margin: 20px;
+}
+
+img.profile-photo {
+    height: 100%;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+img.map-marker {
+    height: 100%;
+    margin-right: 10px;
+}
+
+img.gear {
+    height: 100%;
+    margin-right: 10px;
+}
+
+.photo {
+    height: 75px;
+    width: 75px;
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+.location {
+   display: flex;
+   height: 20px;
+   align-items: center;
+   margin: 5px 0px;
+}
+
+.byline {
+    width: 300px;
+    margin: 5px 0px;
+    /* padding: 10px; */
+}
+
+.edit-profile {
+    display: flex;
+    height: 20px;
+    margin: 5px 0px;
+    align-items: center;
+}
