@@ -232,3 +232,24 @@ img.gear {
     margin-right: 5px;
     text-align: center;
 }
+
+/* Edit Profile */
+
+#edit-info {
+    top: 20%;
+    left: calc((100vw - 300px)/2);
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 5%;
+    background-color: rgb(23,162,184);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 1000px rgba(128, 128, 128, 0.733) ;
+}
+
+#edit-info button, input {
+    margin: 5px;
+}

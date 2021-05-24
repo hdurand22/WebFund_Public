@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Profile</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
         <div class="col">
             <div class="card card-profile">
                 <div class="photo"><img class="profile-photo" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/user-circle.png" alt="User Photo"></div>
-                <h1>Jane Doe</h1>
+                <h1 id="user-name">Jane Doe</h1>
                 <div class="location">
                     <img class="map-marker" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/map-marker.png" alt="Map Marker">
                     <h4>Seattle<h4>
@@ -33,7 +34,11 @@
                 </div>
                 <div class="edit-profile">
                     <img class="gear" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/gear.png" alt="Gear Marker">
-                    <a id="edit" href="#">edit profile</a>
+                    <a id="edit" href="#" onclick="getUserName()">edit profile</a>
+                </div>
+                <div id="edit-info">
+                    <input type="text" placeholder="Enter your user name" id="my-input">
+                    <button onclick="updateUserName()">Submit</button>
                 </div>
             </div>
             <div class="card edu">
@@ -51,15 +56,15 @@
         </div>
         <div class="col">
             <div class="connections-requests">
-                <header><div class="circle">2</div>Connection Requests</header>
+                <header><div class="circle" id="connect-request-count">2</div>Connection Requests</header>
                 <div class="request-row">
                     <span class="request">
                         <img class="connection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/images/todd-s.jpg" alt="Todd E">
                         <h4>Todd E</h4>
                     </span>
                     <span>
-                        <img class="selection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/accept-circle.png" alt="Accept">
-                        <img class="selection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/close-circle.png" alt="Reject">
+                        <img onclick="acceptConnection()" class="selection-img" id="accept" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/accept-circle.png" alt="Accept">
+                        <img onclick="rejectConnection()" class="selection-img" id="reject" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/close-circle.png" alt="Reject">
                     </span>
                 </div>
                 <div class="request-row">
@@ -68,13 +73,13 @@
                         <h4>Phil K</h4>
                     </span>
                     <span>
-                        <img class="selection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/accept-circle.png" alt="Accept">
-                        <img class="selection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/close-circle.png" alt="Reject">
+                        <img onclick="acceptConnection()" class="selection-img" id="accept" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/accept-circle.png" alt="Accept">
+                        <img onclick="rejectConnection()" class="selection-img" id="reject" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/icons/close-circle.png" alt="Reject">
                     </span>
                 </div>
             </div>
             <div class="connections">
-                <header><div class="circle">500+</div>Your Connections</header>
+                <header><div class="circle" id="connection-count">500+</div>Your Connections</header>
                 <div class="connection-row">
                     <img class="connection-img" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W1D4Profile/assets/images/adrien-s.jpg" alt="Adrien D">
                     <h4>Adrien D</h4>
