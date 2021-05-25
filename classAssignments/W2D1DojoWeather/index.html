@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <div class="nav">
+        <h1 class="nav-title">DojoWeather</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick="myAlert()">Burbank</a></li>
+            <li><a href="#" onclick="myAlert()">Chicago</a></li>
+            <li><a href="#" onclick="myAlert()">Dallas</a></li>
+        </ul>
+    </div>
+    <div class="location">
+        <h2>San Jose</h2>
+        <span class="temp-selection">
+            <label for="temp-select">show temperature in</label>
+            <select onchange="convertTemp(this.value)"  name="temp-select" id="temp-select">
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">Celsius</option>
+            </select>
+        </span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <h2>Today</h2>
+                <img id="rain" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W2D1DojoWeather/assets/some_rain.png" alt="Rainy">
+                <p>some rain</p>
+                <ul class="temperature">
+                    <li class="high-temp">75&#176</li>
+                    <li class="low-temp">65&#176</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Tomorrow</h2>
+                <img id="sunny" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W2D1DojoWeather/assets/some_sun.png" alt="Sunny">
+                <p>some sun</p>
+                <ul class="temperature">
+                    <li class="high-temp">80&#176</li>
+                    <li class="low-temp">66&#176</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Wednesday</h2>
+                <img id="rain" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W2D1DojoWeather/assets/some_clouds.png" alt="Rainy">
+                <p>some clouds</p>
+                <ul class="temperature">
+                    <li class="high-temp">69&#176</li>
+                    <li class="low-temp">61&#176</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Thursday</h2>
+                <img id="sunny" src="/Users/haydendurand/Documents/CodingDojo/pushToGit/classAssignments/W2D1DojoWeather/assets/some_sun.png" alt="Sunny">
+                <p>some sun</p>
+                <ul class="temperature">
+                    <li class="high-temp">78&#176</li>
+                    <li class="low-temp">70&#176</li>
+                </ul>
+            </div>
+        </div>
+        <div class="cookie-policy">
+            <img src="assets/cookie.png" alt="cookies">
+            <div class="txt">
+                <h2>Stop! Cookie time</h2>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="closeAd()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
